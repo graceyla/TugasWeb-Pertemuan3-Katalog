@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipies — Cute Stuff, Absolutely Cute</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar-custom">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand-custom" href="#home">
+            <i class="fas fa-shopping-bag me-2"></i>Chipies
+        </a>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="hamburger">
+            <span></span><span></span><span></span>
+        </label>
+        
+        <div class="nav-menu">
+            <a href="#home" class="nav-link-custom">Home</a>
+            <a href="#produk" class="nav-link-custom">Shop</a>
+            <a href="#features" class="nav-link-custom">Perks</a>
+            <a href="#testimonials" class="nav-link-custom">Reviews</a>
+            <a href="#cart-modal" class="btn-nav-custom">
+                <i class="fas fa-shopping-bag me-1"></i>
+                Bag <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative z-2">
+        <div class="row align-items-center min-vh-100 pt-5">
+            <div class="col-lg-6 hero-content">
+                <div class="badge-custom mb-3">🔥 Trending Now</div>
+                <h1 class="hero-title mb-3">
+                    Find Your <span class="gradient-text">Vibe</span> with Cute Stuff
+                </h1>
+                <p class="hero-subtitle mb-4">
+                    Exclusive drops, top-tier quality, absolutely cute. Free shipping on your first order!
+                </p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="#produk" class="btn-primary-custom">
+                        <i class="fas fa-rocket me-2"></i>Shop the Drop
+                    </a>
+                    <a href="#features" class="btn-outline-custom">
+                        <i class="fas fa-play-circle me-2"></i>Peep the Details
+                    </a>
+                </div>
+                
+                <div class="mt-5 d-flex gap-4 stat-container">
+                    <div class="stat-item">
+                        <h3 class="fw-bold text-white">10K+</h3>
+                        <p class="mb-0 text-white-50">Products</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="fw-bold text-white">50K+</h3>
+                        <p class="mb-0 text-white-50">Happy Customers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="fw-bold text-white">4.9</h3>
+                        <p class="mb-0 text-white-50">Rating</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block hero-image-col">
+                <div class="hero-image-container">
+                    <img src="image/store.png" alt="Hero" class="hero-image">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-check-circle text-success"></i>
+                        <span>100% Authentic</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-truck text-primary"></i>
+                        <span>Free Shipping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wave-container">
+        <svg viewBox="0 0 1430 120" fill="none"><path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H0Z" fill="white"/></svg>
+    </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section id="features" class="section-padding bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase ls-2">The Perks</h6>
+            <h2 class="section-title">Why We're Different</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="feature-card">
+                    <div class="feature-icon bg-primary"><i class="fas fa-shipping-fast"></i></div>
+                    <h5>Lightning Fast Shipping</h5>
+                    <p>Free delivery across Indonesia in 1-3 days. No waiting, no cap.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="feature-card">
+                    <div class="feature-icon bg-success"><i class="fas fa-shield-alt"></i></div>
+                    <h5>100% Authentic, No Fakes</h5>
+                    <p>Money-back guarantee if it's not the real deal. Period.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="feature-card">
+                    <div class="feature-icon bg-warning"><i class="fas fa-tags"></i></div>
+                    <h5>Best Prices, Period</h5>
+                    <p>Premium quality without breaking the bank. Smart shopping starts here.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="feature-card">
+                    <div class="feature-icon bg-danger"><i class="fas fa-headset"></i></div>
+                    <h5>We're Here 24/7</h5>
+                    <p>Got questions? We're always online to help you out. Anytime, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUK SECTION -->
+<section id="produk" class="section-padding">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase ls-2">Fresh Drops</h6>
+            <h2 class="section-title">Featured Heat</h2>
+            <p class="text-muted">Tap "Quick Peek" for details, "Add to Bag" to cop it</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- PRODUCT 1 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <div class="product-badge">Hot Pick 🔥</div>
+                    <div class="product-image-wrapper">
+                        <img src="image/sepatu.png" class="product-image" alt="Sepatu">
+                        <a href="#product1" class="btn-quick-view"><i class="fas fa-eye"></i> Quick Peek</a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Fashion</div>
+                        <h5 class="product-title">Pinkies Shoes</h5>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span class="ms-2 text-muted">(4.8)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">Rp 1.299.000</span>
+                            <span class="price-old">Rp 1.599.000</span>
+                        </div>
+                        <input type="checkbox" id="cart1" class="cart-toggle" data-product="Pinkies Shoes">
+                        <label for="cart1" class="btn-add-cart">
+                            <span class="btn-default"><i class="fas fa-shopping-bag me-2"></i>Add to Bag</span>
+                            <span class="btn-checked"><i class="fas fa-check me-2"></i>Got It! ✓</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <div class="product-badge bg-danger">Fresh Drop ✨</div>
+                    <div class="product-image-wrapper">
+                        <img src="image/headphone.png" class="product-image" alt="Headphone">
+                        <a href="#product2" class="btn-quick-view"><i class="fas fa-eye"></i> Quick Peek</a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Electronics</div>
+                        <h5 class="product-title">Sony WH-1000 Headphones</h5>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span class="ms-2 text-muted">(5.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">Rp 3.499.000</span>
+                        </div>
+                        <input type="checkbox" id="cart2" class="cart-toggle" data-product="Sony WH-1000">
+                        <label for="cart2" class="btn-add-cart">
+                            <span class="btn-default"><i class="fas fa-shopping-bag me-2"></i>Add to Bag</span>
+                            <span class="btn-checked"><i class="fas fa-check me-2"></i>Got It! ✓</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="image/tas.png" class="product-image" alt="Tas">
+                        <a href="#product3" class="btn-quick-view"><i class="fas fa-eye"></i> Quick Peek</a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Accessories</div>
+                        <h5 class="product-title">Bunny Bag</h5>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span class="ms-2 text-muted">(4.2)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">Rp 2.199.000</span>
+                            <span class="price-old">Rp 2.599.000</span>
+                        </div>
+                        <input type="checkbox" id="cart3" class="cart-toggle" data-product="Pinkies Bag">
+                        <label for="cart3" class="btn-add-cart">
+                            <span class="btn-default"><i class="fas fa-shopping-bag me-2"></i>Add to Bag</span>
+                            <span class="btn-checked"><i class="fas fa-check me-2"></i>Got It! ✓</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT 4 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="product-card">
+                    <div class="product-badge bg-warning text-dark">30% OFF 💸</div>
+                    <div class="product-image-wrapper">
+                        <img src="image/baju.png" class="product-image" alt="Dress">
+                        <a href="#product4" class="btn-quick-view"><i class="fas fa-eye"></i> Quick Peek</a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Fashion</div>
+                        <h5 class="product-title">Premium Cotton Dress</h5>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span class="ms-2 text-muted">(4.7)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">Rp 149.000</span>
+                            <span class="price-old">Rp 210.000</span>
+                        </div>
+                        <input type="checkbox" id="cart4" class="cart-toggle" data-product="Cotton Dress">
+                        <label for="cart4" class="btn-add-cart">
+                            <span class="btn-default"><i class="fas fa-shopping-bag me-2"></i>Add to Bag</span>
+                            <span class="btn-checked"><i class="fas fa-check me-2"></i>Got It! ✓</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials" class="section-padding bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase ls-2">Reviews</h6>
+            <h2 class="section-title">Real Talk from the Squad</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Legit service! Products are 100% real and shipping was crazy fast. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=1" class="author-img" alt="User">
+                        <div>
+                            <h6 class="mb-0">Ahmad Rizki</h6>
+                            <small class="text-muted">Jakarta</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best prices with premium quality. Been shopping here since last year — never disappointed!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=5" class="author-img" alt="User">
+                        <div>
+                            <h6 class="mb-0">Siti Nurhaliza</h6>
+                            <small class="text-muted">Bandung</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"Customer support is super responsive. Package arrived safe and well-packed. 10/10!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=3" class="author-img" alt="User">
+                        <div>
+                            <h6 class="mb-0">Budi Santoso</h6>
+                            <small class="text-muted">Surabaya</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-custom">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <h4 class="footer-title mb-3"><i class="fas fa-shopping-bag me-2"></i>Chipies</h4>
+                <p class="footer-text">Your go-to spot for premium gear. Thousands of quality products, zero hassle.</p>
+                <div class="social-links mt-4">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5 class="footer-heading">Quick Links</h5>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produk">Shop</a></li>
+                    <li><a href="#features">Perks</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-heading">Categories</h5>
+                <ul class="footer-links">
+                    <li><a href="#produk">Fashion</a></li>
+                    <li><a href="#produk">Electronics</a></li>
+                    <li><a href="#produk">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="footer-heading">Newsletter</h5>
+                <p class="footer-text">Get the tea on new deals 🔥</p>
+                <form action="#newsletter-success" class="newsletter-form">
+                    <input type="email" placeholder="Your email" class="form-control-custom" required>
+                    <button type="submit" class="btn-primary-custom mt-2 w-100">Join the Club</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom mt-5 pt-4 border-top border-secondary text-center">
+            <p class="mb-0">&copy; All Vibes! ✨</p>
+        </div>
+    </div>
+</footer>
+
+<!-- MODAL QUICK VIEW - PRODUCT 1 -->
+<div id="product1" class="modal-overlay">
+    <div class="modal-content">
+        <a href="#produk" class="modal-close"><i class="fas fa-times"></i></a>
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+                <img src="image/sepatu.png" class="img-fluid rounded" alt="Product">
+            </div>
+            <div class="col-md-6">
+                <span class="text-primary fw-bold">FASHION</span>
+                <h2 class="mt-2">Pinkies Shoes</h2>
+                <div class="text-warning my-2">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-muted ms-2">(4.8 / 120 reviews)</span>
+                </div>
+                <h3 class="text-primary my-3">Rp 1.299.000 <small class="text-muted text-decoration-line-through fs-6">Rp 1.599.000</small></h3>
+                <p>Pinkies Shoes with the latest cushioning tech. They make you feel pretty. Available in all sizes.</p>
+                <ul class="list-unstyled my-3">
+                    <li><i class="fas fa-check text-success me-2"></i>Premium breathable material</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Anti-slip rubber sole</li>
+                    <li><i class="fas fa-check text-success me-2"></i>1-year warranty</li>
+                </ul>
+                <a href="#produk" class="btn-primary-custom d-inline-block">
+                    <i class="fas fa-shopping-bag me-2"></i>Cop It Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL QUICK VIEW - PRODUCT 2 -->
+<div id="product2" class="modal-overlay">
+    <div class="modal-content">
+        <a href="#produk" class="modal-close"><i class="fas fa-times"></i></a>
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+                <img src="image/headphone.png" class="img-fluid rounded" alt="Product">
+            </div>
+            <div class="col-md-6">
+                <span class="text-primary fw-bold">ELECTRONICS</span>
+                <h2 class="mt-2">Sony WH-1000 Headphones</h2>
+                <div class="text-warning my-2">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span class="text-muted ms-2">(5.0 / 89 reviews)</span>
+                </div>
+                <h3 class="text-primary my-3">Rp 3.499.000</h3>
+                <p>Wireless headphones with the best noise cancelling in the game. Battery life up to 30 hours — no cap!</p>
+                <ul class="list-unstyled my-3">
+                    <li><i class="fas fa-check text-success me-2"></i>Active Noise Cancelling</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Bluetooth 5.2</li>
+                    <li><i class="fas fa-check text-success me-2"></i>30-hour battery life</li>
+                </ul>
+                <a href="#produk" class="btn-primary-custom d-inline-block">
+                    <i class="fas fa-shopping-bag me-2"></i>Cop It Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL QUICK VIEW - PRODUCT 3 -->
+<div id="product3" class="modal-overlay">
+    <div class="modal-content">
+        <a href="#produk" class="modal-close"><i class="fas fa-times"></i></a>
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+                <img src="image/tas.png" class="img-fluid rounded" alt="Product">
+            </div>
+            <div class="col-md-6">
+                <span class="text-primary fw-bold">ACCESSORIES</span>
+                <h2 class="mt-2">Bunny Bag</h2>
+                <div class="text-warning my-2">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span class="text-muted ms-2">(4.2 / 56 reviews)</span>
+                </div>
+                <h3 class="text-primary my-3">Rp 2.199.000 <small class="text-muted text-decoration-line-through fs-6">Rp 2.599.000</small></h3>
+                <p>Cute bag for daily. Water resistant. Perfect for your cute lifestyle.</p>
+                <ul class="list-unstyled my-3">
+                    <li><i class="fas fa-check text-success me-2"></i>Heart rate monitor</li>
+                    <li><i class="fas fa-check text-success me-2"></i>GPS built-in</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Water resistant 50m</li>
+                </ul>
+                <a href="#produk" class="btn-primary-custom d-inline-block">
+                    <i class="fas fa-shopping-bag me-2"></i>Cop It Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL QUICK VIEW - PRODUCT 4 -->
+<div id="product4" class="modal-overlay">
+    <div class="modal-content">
+        <a href="#produk" class="modal-close"><i class="fas fa-times"></i></a>
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+                <img src="image/baju.png" class="img-fluid rounded" alt="Product">
+            </div>
+            <div class="col-md-6">
+                <span class="text-primary fw-bold">FASHION</span>
+                <h2 class="mt-2">Premium Cotton Dress</h2>
+                <div class="text-warning my-2">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span class="text-muted ms-2">(4.7 / 203 reviews)</span>
+                </div>
+                <h3 class="text-primary my-3">Rp 149.000 <small class="text-muted text-decoration-line-through fs-6">Rp 210.000</small></h3>
+                <p>100% cotton combed 30s. Soft, breathable, and doesn't lose shape. Your new favorite dress.</p>
+                <ul class="list-unstyled my-3">
+                    <li><i class="fas fa-check text-success me-2"></i>100% Cotton Combed 30s</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Pre-shrunk fabric</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Available S-XXL</li>
+                </ul>
+                <a href="#produk" class="btn-primary-custom d-inline-block">
+                    <i class="fas fa-shopping-bag me-2"></i>Cop It Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CART MODAL -->
+<div id="cart-modal" class="modal-overlay">
+    <div class="modal-content modal-small">
+        <a href="#produk" class="modal-close"><i class="fas fa-times"></i></a>
+        <h3 class="mb-3"><i class="fas fa-shopping-bag me-2"></i>Your Bag</h3>
+        <p class="text-muted">Tap "Add to Bag" on products to add them here.</p>
+        <div class="cart-items-list">
+            <div class="cart-item-display">
+                <i class="fas fa-circle text-success me-2"></i>
+                <span>Pinkies Shoes</span>
+            </div>
+            <div class="cart-item-display">
+                <i class="fas fa-circle text-success me-2"></i>
+                <span>Sony WH-1000 Headphones</span>
+            </div>
+            <div class="cart-item-display">
+                <i class="fas fa-circle text-success me-2"></i>
+                <span>Bunny bag</span>
+            </div>
+            <div class="cart-item-display">
+                <i class="fas fa-circle text-success me-2"></i>
+                <span>Premium Cotton Dress</span>
+            </div>
+        </div>
+        <a href="#produk" class="btn-primary-custom w-100 text-center mt-3">
+            <i class="fas fa-arrow-left me-2"></i>Keep Shopping
+        </a>
+    </div>
+</div>
+
+<!-- NEWSLETTER SUCCESS MODAL -->
+<div id="newsletter-success" class="modal-overlay">
+    <div class="modal-content modal-small text-center">
+        <a href="#testimonials" class="modal-close"><i class="fas fa-times"></i></a>
+        <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h3 class="mt-3">You're In! 🎉</h3>
+        <p class="text-muted">Thanks for joining the club! We'll send you the tea on new deals and exclusive drops.</p>
+        <a href="#testimonials" class="btn-primary-custom d-inline-block mt-3">
+            <i class="fas fa-thumbs-up me-2"></i>Cool, Got It!
+        </a>
+    </div>
+</div>
+<script>
+    // Cart State
+    let cart = [];
+    
+    // Add to Cart Function
+    document.querySelectorAll('.cart-toggle').forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            const productName = this.getAttribute('data-product');
+            const btn = this.nextElementSibling;
+            
+            if (this.checked) {
+                // Add to cart
+                cart.push(productName);
+                btn.classList.add('added');
+            } else {
+                // Remove from cart
+                cart = cart.filter(item => item !== productName);
+                btn.classList.remove('added');
+            }
+            
+            updateCart();
+        });
+    });
+    
+    // Update Cart Display
+    function updateCart() {
+        // Update cart count
+        const cartCount = document.querySelector('.cart-count');
+        cartCount.textContent = cart.length;
+        
+        // Update cart items in modal
+        const cartItemsList = document.querySelector('.cart-items-list');
+        if (cart.length === 0) {
+            cartItemsList.innerHTML = '<p class="text-muted text-center py-3">Your bag is empty 😢</p>';
+        } else {
+            cartItemsList.innerHTML = cart.map(item => `
+                <div class="cart-item-display">
+                    <i class="fas fa-circle text-success me-2"></i>
+                    <span>${item}</span>
+                </div>
+            `).join('');
+        }
+    }
+    
+    // Initialize empty cart
+    updateCart();
+</script>
+
+</body>
+</html>
