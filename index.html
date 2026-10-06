@@ -49,7 +49,7 @@
                 <p class="hero-subtitle mb-4">
                     Exclusive drops, top-tier quality, absolutely cute. Free shipping on your first order!
                 </p>
-                <div class="d-flex gap-3 flex-wrap">
+                <div class="d-flex gap-3 flex-wrap hero-actions">
                     <a href="#produk" class="btn-primary-custom">
                         <i class="fas fa-rocket me-2"></i>Shop the Drop
                     </a>
@@ -75,7 +75,7 @@
             </div>
             <div class="col-lg-6 d-none d-lg-block hero-image-col">
                 <div class="hero-image-container">
-                    <img src="image/store.png" alt="Hero" class="hero-image">
+                    <img src="image/store.png" alt="Chipies store" class="hero-image">
                     <div class="floating-card card-1">
                         <i class="fas fa-check-circle text-success"></i>
                         <span>100% Authentic</span>
@@ -144,11 +144,16 @@
         
         <div class="row g-4">
             <!-- PRODUCT 1 -->
-            <div class="col-12 col-md-6 col-lg-3">
+            <!-- grid: HP 1 kolom, sm 2 kolom, lg 3 kolom, xl 4 kolom -->
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                 <div class="product-card">
                     <div class="product-badge">Hot Pick 🔥</div>
                     <div class="product-image-wrapper">
-                        <img src="image/sepatu.png" class="product-image" alt="Sepatu">
+                        <img src="image/sepatu-400.jpg"
+                             srcset="image/sepatu-400.jpg 400w, image/sepatu.png 735w"
+                             sizes="(min-width: 576px) 50vw, 100vw"
+                             loading="lazy"
+                             class="product-image" alt="Pinkies Shoes">
                         <a href="#product1" class="btn-quick-view"><i class="fas fa-eye"></i> Quick Peek</a>
                     </div>
                     <div class="product-info">
@@ -172,11 +177,15 @@
             </div>
 
             <!-- PRODUCT 2 -->
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                 <div class="product-card">
-                    <div class="product-badge bg-danger">Fresh Drop ✨</div>
+                    <div class="product-badge badge-new">Fresh Drop ✨</div>
                     <div class="product-image-wrapper">
-                        <img src="image/headphone.png" class="product-image" alt="Headphone">
+                        <img src="image/headphone-400.jpg"
+                             srcset="image/headphone-400.jpg 400w, image/headphone.png 736w"
+                             sizes="(min-width: 576px) 50vw, 100vw"
+                             loading="lazy"
+                             class="product-image" alt="Sony WH-1000 Headphones">
                         <a href="#product2" class="btn-quick-view"><i class="fas fa-eye"></i> Quick Peek</a>
                     </div>
                     <div class="product-info">
@@ -199,10 +208,14 @@
             </div>
 
             <!-- PRODUCT 3 -->
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                 <div class="product-card">
                     <div class="product-image-wrapper">
-                        <img src="image/tas.png" class="product-image" alt="Tas">
+                        <img src="image/tas-400.jpg"
+                             srcset="image/tas-400.jpg 400w, image/tas.png 736w"
+                             sizes="(min-width: 576px) 50vw, 100vw"
+                             loading="lazy"
+                             class="product-image" alt="Bunny Bag">
                         <a href="#product3" class="btn-quick-view"><i class="fas fa-eye"></i> Quick Peek</a>
                     </div>
                     <div class="product-info">
@@ -216,7 +229,7 @@
                             <span class="price-current">Rp 2.199.000</span>
                             <span class="price-old">Rp 2.599.000</span>
                         </div>
-                        <input type="checkbox" id="cart3" class="cart-toggle" data-product="Pinkies Bag">
+                        <input type="checkbox" id="cart3" class="cart-toggle" data-product="Bunny Bag">
                         <label for="cart3" class="btn-add-cart">
                             <span class="btn-default"><i class="fas fa-shopping-bag me-2"></i>Add to Bag</span>
                             <span class="btn-checked"><i class="fas fa-check me-2"></i>Got It! ✓</span>
@@ -226,11 +239,15 @@
             </div>
 
             <!-- PRODUCT 4 -->
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
                 <div class="product-card">
-                    <div class="product-badge bg-warning text-dark">30% OFF 💸</div>
+                    <div class="product-badge badge-sale">30% OFF 💸</div>
                     <div class="product-image-wrapper">
-                        <img src="image/baju.png" class="product-image" alt="Dress">
+                        <img src="image/baju-400.jpg"
+                             srcset="image/baju-400.jpg 400w, image/baju.png 736w"
+                             sizes="(min-width: 576px) 50vw, 100vw"
+                             loading="lazy"
+                             class="product-image" alt="Premium Cotton Dress">
                         <a href="#product4" class="btn-quick-view"><i class="fas fa-eye"></i> Quick Peek</a>
                     </div>
                     <div class="product-info">
@@ -271,7 +288,7 @@
                     </div>
                     <p class="testimonial-text">"Legit service! Products are 100% real and shipping was crazy fast. Highly recommend!"</p>
                     <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/150?img=1" class="author-img" alt="User">
+                        <img src="https://i.pravatar.cc/150?img=1" class="author-img" loading="lazy" alt="User">
                         <div>
                             <h6 class="mb-0">Ahmad Rizki</h6>
                             <small class="text-muted">Jakarta</small>
@@ -286,7 +303,7 @@
                     </div>
                     <p class="testimonial-text">"Best prices with premium quality. Been shopping here since last year — never disappointed!"</p>
                     <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/150?img=5" class="author-img" alt="User">
+                        <img src="https://i.pravatar.cc/150?img=5" class="author-img" loading="lazy" alt="User">
                         <div>
                             <h6 class="mb-0">Siti Nurhaliza</h6>
                             <small class="text-muted">Bandung</small>
@@ -301,7 +318,7 @@
                     </div>
                     <p class="testimonial-text">"Customer support is super responsive. Package arrived safe and well-packed. 10/10!"</p>
                     <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/150?img=3" class="author-img" alt="User">
+                        <img src="https://i.pravatar.cc/150?img=3" class="author-img" loading="lazy" alt="User">
                         <div>
                             <h6 class="mb-0">Budi Santoso</h6>
                             <small class="text-muted">Surabaya</small>
@@ -365,7 +382,7 @@
         <a href="#produk" class="modal-close"><i class="fas fa-times"></i></a>
         <div class="row g-4 align-items-center">
             <div class="col-md-6">
-                <img src="image/sepatu.png" class="img-fluid rounded" alt="Product">
+                <img src="image/sepatu.png" class="img-fluid rounded" loading="lazy" alt="Product">
             </div>
             <div class="col-md-6">
                 <span class="text-primary fw-bold">FASHION</span>
@@ -395,7 +412,7 @@
         <a href="#produk" class="modal-close"><i class="fas fa-times"></i></a>
         <div class="row g-4 align-items-center">
             <div class="col-md-6">
-                <img src="image/headphone.png" class="img-fluid rounded" alt="Product">
+                <img src="image/headphone.png" class="img-fluid rounded" loading="lazy" alt="Product">
             </div>
             <div class="col-md-6">
                 <span class="text-primary fw-bold">ELECTRONICS</span>
@@ -425,7 +442,7 @@
         <a href="#produk" class="modal-close"><i class="fas fa-times"></i></a>
         <div class="row g-4 align-items-center">
             <div class="col-md-6">
-                <img src="image/tas.png" class="img-fluid rounded" alt="Product">
+                <img src="image/tas.png" class="img-fluid rounded" loading="lazy" alt="Product">
             </div>
             <div class="col-md-6">
                 <span class="text-primary fw-bold">ACCESSORIES</span>
@@ -437,9 +454,9 @@
                 <h3 class="text-primary my-3">Rp 2.199.000 <small class="text-muted text-decoration-line-through fs-6">Rp 2.599.000</small></h3>
                 <p>Cute bag for daily. Water resistant. Perfect for your cute lifestyle.</p>
                 <ul class="list-unstyled my-3">
-                    <li><i class="fas fa-check text-success me-2"></i>Heart rate monitor</li>
-                    <li><i class="fas fa-check text-success me-2"></i>GPS built-in</li>
-                    <li><i class="fas fa-check text-success me-2"></i>Water resistant 50m</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Soft plush bunny design</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Adjustable shoulder strap</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Water resistant lining</li>
                 </ul>
                 <a href="#produk" class="btn-primary-custom d-inline-block">
                     <i class="fas fa-shopping-bag me-2"></i>Cop It Now
@@ -455,7 +472,7 @@
         <a href="#produk" class="modal-close"><i class="fas fa-times"></i></a>
         <div class="row g-4 align-items-center">
             <div class="col-md-6">
-                <img src="image/baju.png" class="img-fluid rounded" alt="Product">
+                <img src="image/baju.png" class="img-fluid rounded" loading="lazy" alt="Product">
             </div>
             <div class="col-md-6">
                 <span class="text-primary fw-bold">FASHION</span>
